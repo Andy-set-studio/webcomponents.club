@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Web Components Club</title>
+    <title>{{ title }} - Web Components Club</title>
 </head>
 <body>
+    <header role="banner">
+        <h1 class="visually-hidden">{% block page_title %}{% endblock %}</h1>
+        <a href="#main-content">Skip to main content</a>
+    </header>
     {% block content %}
     {% endblock content %}
 </body> 
