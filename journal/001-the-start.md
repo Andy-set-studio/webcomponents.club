@@ -1,6 +1,7 @@
 ---
 layout: 'layouts/post.njk'
-date: 2018-05-17
+title: '001: The Start'
+date: '2018-05-17'
 ---
 As the [about page](/about-this-blog) suggests, I'm going to write as I learn web components on this little blog here. As of today, I don't really know much, but I'm definitely excited.
 
