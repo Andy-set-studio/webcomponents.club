@@ -2,6 +2,7 @@
 layout: 'layouts/post.njk'
 title: '004: Shadow DOM'
 date: '2018-05-30'
+tags: 'journal'
 ---
 The shadow DOM has always sounded like some sort of superhero to me. I've totally discounted it (wrongly) as a poorly supported bleeding-edge thing, but that's [certainly not the case](https://caniuse.com/#feat=shadowdomv1).
 

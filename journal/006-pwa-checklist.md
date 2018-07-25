@@ -2,6 +2,7 @@
 layout: 'layouts/post.njk'
 title: '006: PWA Checklist'
 date: '2018-06-14'
+tags: 'journal'
 ---
 First up, what's a PWA? A PWA is a _Progressive Web App_. A PWA is essentially a website that behaves like a native app, in essence. I feel that definition will change when the aim of a PWA is no longer to imitate native iOS and Android apps though.
 

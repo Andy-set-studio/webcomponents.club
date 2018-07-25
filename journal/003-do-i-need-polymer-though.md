@@ -2,6 +2,7 @@
 layout: 'layouts/post.njk'
 title: '003: Do I need Polymer though?'
 date: '2018-05-22'
+tags: 'journal'
 ---
 Yeh yeh, I know I said I wanted to look at Shadow DOM in the [last post,](/journal/002-a-whistle-stop-tour/) but I’ve [been reading](https://hackernoon.com/web-components-the-react-way-8ed5b6f4f942?source=linkShare-dca915473cbb-1527021346) and the “vanilla” web components API looks it could possibly be quite straightforward, so I thought I’d jot down some thoughts.
 

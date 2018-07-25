@@ -2,6 +2,7 @@
 layout: 'layouts/post.njk'
 title: '002: A whistle-stop tour'
 date: '2018-05-17'
+tags: 'journal'
 ---
 I thought the best thing to do to get started is to get a feel for [Polymer](https://www.polymer-project.org/). Polymer and web components have a strong association and people seem to say good things about it. Also, the talk and repositories that I mentioned in [001](/journal/001-the-start/) are all based on Polymer.
 

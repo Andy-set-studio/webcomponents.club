@@ -1,5 +1,17 @@
 {% extends "layouts/base.njk" %}
 
 {% block content %}
-    {{ content | safe }}
+    <main id="main-content">
+        <section class="post-list">
+            {% for item in collections.journal %}
+                <article>
+                    <h2>
+                        <a href="{{ item.url }}">{{ item.data.title }}</a>
+                    </h2>
+                    <p class="date"><time datetime="{{ item.data.date }}">{{ item.data.date | date }}</time></p>
+                    {{ item.templateContent | safe }}
+                </article>
+            {% endfor %}
+        </section>
+    </main>
 {% endblock %}

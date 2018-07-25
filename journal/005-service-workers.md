@@ -2,6 +2,7 @@
 layout: 'layouts/post.njk'
 title: '005: Service workers'
 date: '2018-06-04'
+tags: 'journal'
 ---
 Arguably a prerequisite for performant, front-end development, the humble service worker is quite incredible.
 
