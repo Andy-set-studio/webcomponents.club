@@ -1,0 +1,211 @@
+/* Mini reset */
+* {
+    box-sizing: border-box;
+}
+
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html, body, h1, h2, h3, h4, h5, h6, p, ul, ol, li, dd, header, nav, article, section,
+aside, figure, figcaption, footer, dl, dd, dt {
+    margin: 0px;
+    padding: 0px;
+}
+
+html {
+    /* Hide persistent scrollbar in IE (10/11) and Edge */
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+body {
+    text-rendering: optimizeLegibility;
+}
+
+ul, ol {
+    list-style: none;
+}
+
+img {
+    border: 0;
+    display: block;
+    max-width: 100%;
+}
+
+/* Firefox input fix */
+input::-moz-focus-inner {
+    border: 0;
+    padding: 0;
+}
+
+/* end mini reset */
+
+/* Root variables */
+:root {
+    /* Color */
+    --color-charcoal: #444444;
+    --color-grey: #61595f;
+    --color-grey--light: #cccccc;
+    --color-red: #ea6d50;
+    --color-red--mid: #bd3617;
+    --color-pale-blue: #d7daf8;
+    --color-off-white: #efefef;
+    
+    /* Metric */
+    --metric-gutter: 1rem;
+    --metric-gutter--double: 2rem;
+    --metric-rhythm: 1rem;
+    --metric-radius: 0.6rem;
+
+    /* Type */
+    --type-base-family: 'Georgia', Arial, sans-serif;
+    --type-heading-family: -apple-system, BlinkMacSystemFont, 
+                            "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", 
+                            "Fira Sans", "Droid Sans", "Helvetica Neue", 
+                            sans-serif;
+
+    /* Transition */
+    --transition-bezier: cubic-bezier(.22,.52,.8,.58);
+}
+/* End root variables */
+
+/* Core, global styles */
+html {
+    background: var(--color-off-white);
+}
+
+body {
+    font-size: 1.2rem;
+    line-height: 1.7;
+    color: var(--color-charcoal);
+    font-family: var(--type-base-family);
+    padding: 2rem;
+}
+
+h1, h2, h3, h4 {
+    --metric-rhythm: 2rem;
+    font-family: var(--type-heading-family);
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+@supports(padding: var(--metric-rhythm)) {
+    body {
+        padding: 0;
+    }
+}
+
+a {
+    color: var(--link-color, var(--color-red--mid));
+    text-decoration-skip-ink: auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    --metric-rhythm: 3rem;
+
+    margin: var(--metric-rhythm) auto;
+    max-width: 300px;
+    border: none;
+    border-top: 1px solid var(--color-grey--light);
+    transform: translatey(-1px);
+}
+
+pre {
+    --metric-rhythm: 2rem;
+    display: block;
+    padding: 1rem;
+    background: var(--color-charcoal);
+    color: var(--color-purple);
+    border-radius: var(--metric-radius);
+    line-height: 1.7;
+    margin: 2rem 0 0 0;
+}
+
+code {
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+}
+
+/* Global center wrapper */
+.wrapper {
+    max-width: 55rem;
+    padding: 2rem 1rem;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* SR content */
+.visually-hidden { 
+    display: block;
+    height: 1px;
+    width: 1px;
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px);
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(1px);
+    white-space: nowrap;
+    position: absolute;
+}
+
+/* Fancy selection */
+::-moz-selection {
+    color: #ffffff;
+    background: rgba(51, 51, 51, 0.99);
+}
+
+::selection {
+    color: #ffffff;
+    background: rgba(51, 51, 51, 0.99);
+}
+/* Core, global styles end */
+
+/* Article styles */
+article {
+    max-width: 65ch;
+}
+
+article > * + * {
+    margin-top: var(--metric-rhythm);
+}
+/* End article styles */
+
+/* Nav styles */
+nav {
+    font-size: 1rem;
+    font-family: var(--type-heading-family);
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 0.5rem 0 2rem 0;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav li + li {
+    margin-left: 1rem;
+}
+
+nav a {
+    color: var(--color-grey);
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--color-red--mid);
+}
+/* End nav styles */

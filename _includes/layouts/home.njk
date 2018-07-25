@@ -4,8 +4,11 @@
 
 {% block content %}
     <main id="main-content">
-        <section class="post-list">
+        <section>
             {% for item in collections.journal %}
+                {% if loop.index !== 1 %}
+                    <hr />
+                {% endif %}
                 <article>
                     <h2>
                         <a href="{{ item.url }}">{{ item.data.title }}</a>
