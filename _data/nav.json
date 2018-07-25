@@ -1,0 +1,19 @@
+{
+    "items": [
+        {
+            "text": "Home",
+            "url": "/",
+            "external": false
+        },
+        {
+            "text": "About this blog",
+            "url": "/about-this-blog",
+            "external": false
+        },
+        {
+            "text": "Twitter",
+            "url": "//twitter.com/hankchizljaw",
+            "external": true
+        }
+    ]
+}

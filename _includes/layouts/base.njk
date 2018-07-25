@@ -10,8 +10,20 @@
     <header role="banner">
         <h1 class="visually-hidden">{% block page_title %}{% endblock %}</h1>
         <a href="#main-content">Skip to main content</a>
+        <nav>
+            <ul>
+                {% for item in nav.items %}
+                    <li>
+                        <a href="{{ item.url }}"{{ 'rel=external' if item.external }}>{{ item.text }}</a>
+                    </li>
+                {% endfor %}
+            </ul>
+        </nav>
     </header>
     {% block content %}
     {% endblock content %}
+    <footer role="contentinfo">
+        <p>A project by <a href="//twitter.com/hankchizljaw" rel="external">HankChizlJaw</a></p>
+    </footer>
 </body> 
 </html>
