@@ -14,7 +14,7 @@ I've been thinking about web components for a while now. I appreciate how [Dave 
 
 This has all changed though. At Google I/O, [Monica Dinculescu](https://twitter.com/notwaldorf) gave a really interesting talk, which I think you should watch because it's certainly really inspired me.
 
-{% video 'https://youtu.be/we3lLo-UFtk' %}
+{% video 'https://www.youtube.com/embed/we3lLo-UFtk' %}
 
 In the talk, a [PWA starter kit](https://github.com/Polymer/pwa-starter-kit) and some very useful [PWA helpers](https://github.com/Polymer/pwa-starter-kit) were announced and demonstrated. I'm a really big fan of the [~25 line router](https://github.com/Polymer/pwa-helpers/blob/master/router.js) especially.
 
