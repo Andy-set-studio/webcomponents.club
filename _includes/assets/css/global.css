@@ -237,3 +237,10 @@ footer[role="contentinfo"] {
     font-weight: 500;
 }
 /* End site foot */
+
+/* Media query adjustments */
+@media all and (min-width: 32rem) {
+    a {
+        word-break: unset;
+    }
+}
