@@ -192,6 +192,10 @@ article footer {
 article time {
     font-style: italic;
 }
+
+article h3 + p {
+    --metric-rhythm: 1rem;
+}
 /* End article styles */
 
 /* Nav styles */
