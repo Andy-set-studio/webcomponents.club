@@ -111,6 +111,7 @@ h3 {
 a {
     color: var(--link-color, var(--color-red--mid));
     text-decoration-skip-ink: auto;
+    word-break: break-all;
 }
 
 a:hover,
