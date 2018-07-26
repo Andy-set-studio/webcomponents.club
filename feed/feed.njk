@@ -1,0 +1,28 @@
+---
+permalink: feed/feed.xml
+---
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+	<title>Web Components Club</title>
+	<subtitle>A journal about learning web components</subtitle>
+	<link href="https://webcomponents.club/feed/feed.xml" rel="self"/>
+	<link href="https://webcomponents.club/"/>
+	<updated>{{ collections.journal | rssLastUpdatedDate }}</updated>
+	<id>https://webcomponents.club</id>
+	<author>
+		<name>Andy Bell</name>
+		<email>andy@hankchizljaw.io</email>
+	</author>
+	{%- for post in collections.journal %}
+	{% set absolutePostUrl %}https://webcomponents.club{{ post.url | url }}{% endset %}
+	<entry>
+		<title>{{ post.data.title }}</title>
+		<link href="{{ absolutePostUrl }}"/>
+		<updated>{{ post.date | rssDate }}</updated>
+		<id>{{ absolutePostUrl }}</id>
+		<content type="html">
+			{{ post.templateContent | truncate(250) | striptags }}
+		</content>
+	</entry>
+	{%- endfor %}
+</feed>
