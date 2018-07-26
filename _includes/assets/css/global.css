@@ -83,6 +83,8 @@ body {
     color: var(--color-charcoal);
     font-family: var(--type-base-family);
     padding: 2rem;
+    overflow-x: hidden;
+    min-width: 20rem;
 }
 
 h1, h2, h3, h4 {
