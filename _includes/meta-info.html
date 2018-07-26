@@ -1,0 +1,30 @@
+{% set pageTitle = title + ' - Web Components Club' %}
+{% set siteTitle = 'Web Components Club' %}
+{% set currentUrl = 'https://webcomponents.club' + url %}
+{% set image = 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/174183/wc-share.png' %}
+
+<title>{{ pageTitle }}</title>
+
+<meta property="og:site_name" content="{{ siteTitle }}" />
+<meta property="og:title" content="{{ pageTitle }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ currentUrl }}" />
+
+<meta property="og:image" content="{{ image }}" />
+<meta name="twitter:image" content="{{ image }}" />
+<meta name="twitter:creator" content="@hankchizljaw" />
+<meta name="twitter:card" content="summary_large_image">
+<script type="application/ld+json">
+{
+    "@context": "http://schema.org/",
+    "@type": "Website",
+    "name": "{{ siteTitle }}",
+    "url": "{{ currentUrl }}",
+    "image": {
+        "@type": "ImageObject",
+        "url": "{{ image }}",
+        "height": 2400,
+        "width": 1260
+    }
+}
+</script>
