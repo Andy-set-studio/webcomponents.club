@@ -8,6 +8,9 @@
             <h2>{{ title }}</h2>
             <p class="date"><time datetime="{{ date }}">{{ date | date }}</time></p>
             {{ content | safe }}
+            <footer>
+                <a href="/">&larr; Go back to the article archive</a>
+            </footer>
         </article>
     </main>
 {% endblock %}

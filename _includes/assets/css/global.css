@@ -31,6 +31,8 @@ img {
     border: 0;
     display: block;
     max-width: 100%;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
 }
 
 /* Firefox input fix */
@@ -55,7 +57,7 @@ input::-moz-focus-inner {
     /* Metric */
     --metric-gutter: 1rem;
     --metric-gutter--double: 2rem;
-    --metric-rhythm: 1rem;
+    --metric-rhythm: 2rem;
     --metric-radius: 0.6rem;
 
     /* Type */
@@ -84,7 +86,7 @@ body {
 }
 
 h1, h2, h3, h4 {
-    --metric-rhythm: 2rem;
+    --metric-rhythm: 3rem;
     font-family: var(--type-heading-family);
     font-weight: 500;
     line-height: 1.2;
@@ -109,8 +111,9 @@ a {
     text-decoration-skip-ink: auto;
 }
 
-a {
-    text-decoration: none;
+a:hover,
+a:focus {
+    text-decoration: none;    
 }
 
 hr {
@@ -128,7 +131,7 @@ pre {
     display: block;
     padding: 1rem;
     background: var(--color-charcoal);
-    color: var(--color-purple);
+    color: var(--color-off-white);
     border-radius: var(--metric-radius);
     line-height: 1.7;
     margin: 2rem 0 0 0;
@@ -181,6 +184,14 @@ article {
 article > * + * {
     margin-top: var(--metric-rhythm);
 }
+
+article footer {
+    --metric-rhythm: 4rem;
+}
+
+article time {
+    font-style: italic;
+}
 /* End article styles */
 
 /* Nav styles */
@@ -202,6 +213,7 @@ nav li + li {
 
 nav a {
     color: var(--color-grey);
+    text-decoration: none;
 }
 
 nav a:hover,
@@ -209,3 +221,12 @@ nav a:focus {
     color: var(--color-red--mid);
 }
 /* End nav styles */
+
+/* Site foot */
+footer[role="contentinfo"] {
+    font-family: var(--type-heading-family);
+    font-size: 1rem;
+    text-align: center;
+    font-weight: 500;
+}
+/* End site foot */
