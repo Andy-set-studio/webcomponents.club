@@ -23,10 +23,6 @@ body {
     text-rendering: optimizeLegibility;
 }
 
-ul, ol {
-    list-style: none;
-}
-
 img {
     border: 0;
     display: block;
@@ -111,7 +107,7 @@ h3 {
 a {
     color: var(--link-color, var(--color-red--mid));
     text-decoration-skip-ink: auto;
-    word-break: break-all;
+    word-break: break-word;
 }
 
 a:hover,
@@ -144,6 +140,16 @@ code {
     display: block;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
+}
+
+ul, ol {
+    padding-left: 2.2rem;
+}
+
+li + li {
+    --metric-rhythm: 0.6rem;
+
+    margin-top: var(--metric-rhythm);
 }
 
 /* Global center wrapper */
