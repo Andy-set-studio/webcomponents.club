@@ -142,16 +142,6 @@ code {
     -webkit-overflow-scrolling: touch;
 }
 
-ul, ol {
-    padding-left: 2.2rem;
-}
-
-li + li {
-    --metric-rhythm: 0.6rem;
-
-    margin-top: var(--metric-rhythm);
-}
-
 /* Global center wrapper */
 .wrapper {
     max-width: 55rem;
@@ -205,6 +195,16 @@ article time {
 article h3 + p {
     --metric-rhythm: 1rem;
 }
+
+article ul, article ol {
+    padding-left: 2.2rem;
+}
+
+article li + article li {
+    --metric-rhythm: 0.6rem;
+
+    margin-top: var(--metric-rhythm);
+}
 /* End article styles */
 
 /* Nav styles */
@@ -218,6 +218,7 @@ nav {
 
 nav ul {
     display: flex;
+    list-style: none;
 }
 
 nav li + li {
