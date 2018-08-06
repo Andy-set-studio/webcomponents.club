@@ -236,6 +236,21 @@ nav a:focus {
 }
 /* End nav styles */
 
+/* Blockquote styles */
+blockquote {
+    border-left: 5px solid var(--color-red);
+    margin-left: 0;
+    padding-left: 2rem;
+    color: var(--color-grey);
+}
+
+blockquote > * + * {
+    --metric-rhythm: 1rem;
+
+    margin-top: var(--metric-rhythm);
+}
+/* End blockquote styles */
+
 /* Site foot */
 footer[role="contentinfo"] {
     font-family: var(--type-heading-family);
